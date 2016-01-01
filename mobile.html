@@ -22,12 +22,12 @@
 					<div class="tag"><strong>JavaScript</strong></div>
 					<textarea id="js" class="content" contenteditable></textarea>
 				</td>
-				<td>
+				<div>
 					<div class="tag"><strong>OUTPUT</strong></div>
 					<iframe id="output"></iframe>
-				</td>
-			</tr>
-		</table>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
 <script>
@@ -74,5 +74,11 @@ font-size: 8px;
 	
 iframe body {
 font-family: Ubuntu;
+}
+.table {
+width: 100%;
+height: 100%;
+position: absolute;
+display: table;
 }
 </style>
