@@ -12,17 +12,17 @@
 					<div class="tag"><strong>HTML (Body)</strong></div>
 					<textarea id="html" class="content" contenteditable></textarea>
 				</div>
-				<td>
+				<div class=cell>
 					<div class="tag"><strong>CSS</strong></div>
 					<textarea id="css" class="content" contenteditable></textarea>
-				</td>
-			</tr>
-			<tr>
-				<td>
+				</div>
+				<div class=cell>
 					<div class="tag"><strong>JavaScript</strong></div>
 					<textarea id="js" class="content" contenteditable></textarea>
-				</td>
-				<div>
+				</div>
+</div>
+<div class=col>
+				<div class=cell>
 					<div class="tag"><strong>OUTPUT</strong></div>
 					<iframe id="output"></iframe>
 				</div>
@@ -80,5 +80,16 @@ width: 100%;
 height: 100%;
 position: absolute;
 display: table;
+}
+.col {
+display: table-column;
+height: 100%;
+
+}
+.cell {
+display: table-cell;
+width: 100%;
+height: 100%;
+border: double 2px black;
 }
 </style>
