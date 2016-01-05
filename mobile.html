@@ -56,6 +56,7 @@ window.onload=function(){
 	css.onkeyup=fill;
 	js.onkeyup=fill;
 html.value = '<div class=\'container\'>\n\
+<button id=\'b\'>Click</button>\n\
 </div>';
 css.value='.container \{\
 position: absolute\;\
@@ -63,7 +64,9 @@ width: 100%\;\
 height: 100%\;\
 \}'
 
-js.value = 'var xhr = new XmlHttpRequest()\;xhr.addEventListener(\'load\',function()\{\})'
+// js.value = 'var xhr = new XmlHttpRequest()\;xhr.addEventListener(\'load\',function()\{\})'
+var myVariable = "var xhr = new XMLHttpRequest();xhr.addEventListener(\'load\',function(){\nconsole.log(xhr.responseText);\n});\nxhr.open(\'GET\',\'http:\/\/www.splashbase.co\/api\/v1\/images\/random\');\ndocument.getElementById(\'b\').onclick = function () {\nxhr.send();\n};";
+js.value = myVariable;	
 }
 </script>
 <style>
