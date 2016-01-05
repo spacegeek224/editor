@@ -65,8 +65,7 @@ height: 100%\;\
 \}'
 
 // js.value = 'var xhr = new XmlHttpRequest()\;xhr.addEventListener(\'load\',function()\{\})'
-var myVariable = "var xhr = new XMLHttpRequest();xhr.addEventListener(\'load\',function(){\nconsole.log(xhr.responseText);\n});\nxhr.open(\'GET\',\'http:\/\/www.splashbase.co\/api\/v1\/images\/random\');\ndocument.getElementById(\'b\').onclick = function () {\nxhr.send();\n};";
-js.value = myVariable;	
+var myVariable = "var xhr = new XMLHttpRequest();xhr.addEventListener(\'load\',function(){\nconsole.log(xhr.responseText);\n});\n\ndocument.getElementById(\'b\').onclick = function () {\nxhr.open(\'GET\',\'http:\/\/www.splashbase.co\/api\/v1\/images\/random\');\nxhr.send();\n};";js.value = myVariable;	
 }
 </script>
 <style>
